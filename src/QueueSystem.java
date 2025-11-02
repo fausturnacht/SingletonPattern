@@ -10,7 +10,7 @@ public final class QueueSystem {
     private QueueSystem(){
     }
 
-    public static QueueSystem getInstance(){
+    public static synchronized QueueSystem getInstance(){
         if(queueSystem == null){
             queueSystem = new QueueSystem();
         }
